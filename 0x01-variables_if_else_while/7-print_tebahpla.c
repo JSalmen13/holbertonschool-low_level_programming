@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* main - mirror 
+* main - mirror
 * @a -char
 * Return: 0
 **/
