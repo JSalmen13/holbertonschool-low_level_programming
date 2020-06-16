@@ -16,18 +16,24 @@ void times_table(void)
 		y = u * i;
 			if (y < 10)
 				{
-					_putchar(y + '0');
+				_putchar(y + '0');
+				if (u != 9)
+					{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					}
 				}
 			else
 				{
 				_putchar(y / 10 + '0');
 				_putchar(y % 10 + '0');
-				}
-			if (u != 9)
-				{
-				_putchar(',');
-				_putchar(' ');
-				_putchar(' ');
+				if (u != 9)
+					{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					}
 				}
 		}
 	_putchar('\n');
