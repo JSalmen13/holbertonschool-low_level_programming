@@ -2,17 +2,13 @@
 /**
 * print_alphabet - display alphabet
 *
-* Return: 0
+* Return: 1
 **/
 void print_alphabet(void)
 {
-	char A = 'a';
-
-	while (A <= 'z')
-	{
-		_putchar(A);
-		A++;
-	}
-	_putchar('\n');
-	return (0);
+for (int B = 97; B <= 122; B++)
+{
+_putchar(B);
+}
+_putchar('\n');
 }
