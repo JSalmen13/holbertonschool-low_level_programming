@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - print fizz/buzz whenever n % 3 or n % 5 is zero
- * 
+ *
  * Return: 0 always
  */
 int main(void)
