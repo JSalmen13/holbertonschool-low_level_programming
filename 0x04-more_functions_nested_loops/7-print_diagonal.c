@@ -2,13 +2,12 @@
 /**
 * print_diagonal - diagonal printing
 * @n: var
-* @i: cnt 1
-* @j: cnt 2
 * Return: 0
 **/
 void print_diagonal(int n)
 {
 	int j, i;
+
 	j = 0;
 	if (n > 0)
 		for (i = 0 ; i < n; i++)
