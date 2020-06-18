@@ -1,8 +1,8 @@
 #include <stdio.h>
 /**
  * main - print fizz/buzz whenever n % 3 or n % 5 is zero
- * @n; var from 1 to 99
- * Return: 0
+ * 
+ * Return: 0 always
  */
 int main(void)
 {
@@ -11,25 +11,16 @@ int main(void)
 	for (n = 1; n <= 100; n++)
 	{
 		if (n % 3 == 0 && n % 5 == 0)
-		{
 			printf("FizzBuzz");
-		}
 		else if (n % 3 == 0)
-		{
 			printf("Fizz");
-		}
 		else if (n % 5 == 0)
-		{
 			printf("Buzz");
-		}
 		else
-		{
 			printf("%d", n);
-		}
 		if (n != 100)
-		{
 			printf(" ");
-		}
 	}
 	printf("\n");
+	return (0);
 }
