@@ -2,22 +2,22 @@
 /**
 * print_diagonal - diagonal printing
 * @n: var
+* @i: cnt 1
+* @j: cnt 2
 * Return: 0
 **/
 void print_diagonal(int n)
 {
-	int i, j = 0;
-
+	int j, i;
+	j = 0;
 	if (n > 0)
-	for (i = 0; i < n; i++)
-	{
-		for (j = 0; j <= i; j++)
+		for (i = 0 ; i < n; i++)
 		{
-			_putchar(' ');
+			for (j = 0; j < i; j++)
+				_putchar(' ');
+			_putchar('\\');
+			_putchar('\n');
 		}
-		_putchar('\\');
-		_putchar('\n');
-	}
 	else
-	_putchar('\n');
+		_putchar('\n');
 }
