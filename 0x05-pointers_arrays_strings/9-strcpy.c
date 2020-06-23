@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
   * _strcpy - sdfghjkhgfds
  * @dest: int
