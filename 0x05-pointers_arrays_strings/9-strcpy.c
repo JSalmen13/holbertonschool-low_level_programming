@@ -1,7 +1,6 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
- * _strcpy - copy
+ * \*_strcpy - sdfghjkhgfds
  * @dest: int
  * @src: int
  * Return : aaaa
