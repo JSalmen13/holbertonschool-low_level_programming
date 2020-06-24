@@ -3,7 +3,7 @@
  * _strcpy - cp 
  * @dest: aaaa
  * @src: bbbb
- * Return: dest value.
+ * Return: On success 1.
  */
 char *_strcpy(char *dest, char *src)
 {
