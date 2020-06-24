@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * _strcpy - cp 
+ * _strcpy - cp
  * @dest: aaaa
  * @src: bbbb
  * Return: On success 1.
