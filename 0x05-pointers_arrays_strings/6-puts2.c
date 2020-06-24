@@ -2,6 +2,7 @@
 /**
  * puts2 - prints
  * @str: string
+ * Return SUCCESS
  */
 void puts2(char *str)
 {
