@@ -1,22 +1,24 @@
 #include "holberton.h"
 /**
- * \*_strcpy - sdfghjkhgfds
- * @dest: int
- * @src: int
- * Return : aaaa
+ * _strcpy - cp 
+ * @dest: aaaa
+ * @src: bbbb
  */
 char *_strcpy(char *dest, char *src)
 {
-int a, length;
+	int a, length;
 
-length = 0;
-while (src[length] != '\0')
-{
-length++;
-}
-for (a = 0; a <= length; a++)
-{
-dest[a] = src[a];
-}
+	length = 0;
+	while (src[length] != '\0')
+	{
+	length++;
+	}
+
+
+	for (a = 0; a <= length; a++)
+	{
+		dest[a] = src[a];
+	}
+
 return (dest);
 }
