@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*string_toupper - lower to upper 
+*string_toupper - lower to upper
 *
 *@s: pte
 *
