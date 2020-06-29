@@ -8,13 +8,11 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *p = s;
-
-	while (*p != '\0')
+	while (*s != '\0')
 	{
-		if (*p == c)
-		return (p);
-		p++;
+		if (*s == c)
+		return (s);
+		s++;
 	}
 	return (NULL);
 }
