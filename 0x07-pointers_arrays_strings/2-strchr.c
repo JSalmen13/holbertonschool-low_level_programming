@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdlib.h>
 /**
  * _strchr - search
  * @s: char
@@ -13,10 +14,7 @@ char *_strchr(char *s, char c)
 	{
 		if (*p == c)
 		return (p);
-		else
-		{
-			p++;
-		}
+		p++;
 	}
-	return (0);
+	return (NULL);
 }
