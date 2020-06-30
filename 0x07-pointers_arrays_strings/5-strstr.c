@@ -1,4 +1,5 @@
 #include "holberton.h"
+#include <stdio.h>
 /**
  * _strstr - find occurence
  * @haystack: str 1
@@ -9,6 +10,9 @@ char *_strstr(char *haystack, char *needle)
 {
 	int i, j, k;
 
+	j = 0;
+	if(needle[0] == '\0')
+	return (haystack);
 	for (k = 0; needle[k]; k++)
 	;
 	for (i = 0; haystack[i]; i++)
@@ -18,7 +22,9 @@ char *_strstr(char *haystack, char *needle)
 			for (j = 0; needle[j]; j++)
 			{
 				if (needle[j] != haystack[i + j])
-				break;
+				{
+					break;
+				}
 			}
 		}
 		if (j == k)
