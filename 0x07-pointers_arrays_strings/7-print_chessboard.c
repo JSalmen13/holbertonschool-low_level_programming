@@ -2,6 +2,7 @@
 /**
 * print_chessboard - azeazeazeazeaz
 * @a: azeazeazea
+* Return: 0
 */
 void print_chessboard(char (*a)[8])
 {
