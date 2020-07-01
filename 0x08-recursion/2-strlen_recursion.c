@@ -2,7 +2,7 @@
 /**
  * _strlen_recursion - azeaze
  * @s: string
- * return: i
+ * Return: i
  */
 int _strlen_recursion(char *s)
 {
