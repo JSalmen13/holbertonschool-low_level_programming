@@ -9,5 +9,7 @@ int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
 int root_finder(int z, int tp);
+int is_prime_number(int n);
+int dividable(int n, int div);
 
 #endif /* HOLBERTON_H */
