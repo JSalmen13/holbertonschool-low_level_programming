@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _sqrt_recursion - square root 
+ * _sqrt_recursion - square root
  * @n: var
  * Return: sqrt of n or error -1
  */
