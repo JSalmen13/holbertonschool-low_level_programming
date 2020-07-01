@@ -11,5 +11,8 @@ int _sqrt_recursion(int n);
 int root_finder(int z, int tp);
 int is_prime_number(int n);
 int dividable(int n, int div);
+int is_palindrome(char *s);
+int palin(int l, int r, char *p);
+int _strlen(char *str);
 
 #endif /* HOLBERTON_H */
