@@ -9,6 +9,7 @@
 int main(int argc, char *argv[])
 {
 	int i, mul = 1, ar;
+
 	if (argc > 2)
 	{
 		for (i = 1; i < argc; i++)
