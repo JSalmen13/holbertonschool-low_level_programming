@@ -15,6 +15,9 @@ int main(int argc, char *argv[])
 		ar = atoi(argv[i]);
 		mul *= ar;
 	}
+	if (argc > 1)
 	printf("%d\n", mul);
+	else
+	printf("Error\n");
 	return (0);
 }
