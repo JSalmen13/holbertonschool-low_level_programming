@@ -9,14 +9,15 @@
 int main(int argc, char *argv[])
 {
 	int i, mul = 1, ar;
-
-	for (i = 1; i < argc; i++)
+	if (argc > 2)
 	{
-		ar = atoi(argv[i]);
-		mul *= ar;
+		for (i = 1; i < argc; i++)
+		{
+			ar = atoi(argv[i]);
+			mul *= ar;
+		}
+		printf("%d\n", mul);
 	}
-	if (argc > 1)
-	printf("%d\n", mul);
 	else
 	printf("Error\n");
 	return (0);
