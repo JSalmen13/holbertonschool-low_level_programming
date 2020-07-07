@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include <string.h>
+#include <stdio.h>
 #include <stdlib.h>
 /**
  * _strdup - str duplicate
@@ -9,17 +9,18 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	unsigned int i;
+	unsigned int i, len = 0;
 
 	if (str == NULL)
 		return (NULL);
-	str2 = malloc(sizeof(str));
+	while (str[len])
+	len++;
+	len++;
+	str2 = malloc(sizeof(char) * len);
 	if (str2 == NULL)
 		return (NULL);
-	while(str[i])
-	{
+	for (i = 0; i < len; i++)
 	str2[i] = str[i];
-	i++;
-	}
+	str2[i] = '\0';
 	return (str2);
 }
