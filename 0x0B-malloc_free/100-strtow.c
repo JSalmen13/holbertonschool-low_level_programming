@@ -1,66 +1,70 @@
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include "holberton.h"
 /**
-* strtow - create an array with init
-* @str: size of the array.
-* Return: char
+* _strlen - check the code for Holberton School students.
+* @s : char
+* Return: Always 0.
 */
-
+int strlen(char *s)
+{
+int i;
+while (s[i] != ' ' || s[i] != '\0')
+{
+i++;
+}
+return (i);
+}
+/**
+ * strtow - check the code for Holberton School students.
+ * @str: int
+ * Return: Always 0.
+ */
 char **strtow(char *str)
 {
-char **r;
-int a[];
-int i, k, s;
-int length, words = 0;
-
-if (str == NULL || str == "")
+int i, j, x, l, z = 0;
+char *a, *r;
+if (str == NULL || *str == '\0')
 return (NULL);
-
-for (length = 0; str[length] != '\0'; length++)
+for (i = 0 ; str ; i++)
 {
-if (str[length] != " " && str[length + 1] == " ")
-words++;
+if (!str[i] == ' ')
+{
+z++;
+x = strlen(str + i);
+for (j = 0 ; j < x ; j++)
+{
+a[j] = str[i + x];
 }
-
-for (length = 0; str[length] != '\0'; length++)
-{
-if (str[length] != " ")
-s = 0;
-while (str[length] != " ")
-{
-a[s]++;
-s++;
-length++;
+a[j + 1] = ' ';
+i = i + x + 1;
 }
 }
-
-r = malloc(sizeof(char *) * words);
+r = (char **)malloc((z + 1) * sizeof(char *));
 if (r == NULL)
-return (NULL);
-
-for (i = 0; i < words; i++)
 {
-r[i] = malloc(sizeof(char) * a[i]);
-if (r[i] == NULL)
-{
-for (k = 0; k < i; k++)
-free(r[k]);
 free(r);
 return (NULL);
 }
-
-for (i = 0; i < length; i++)
+for (i = 0 ; i <= z ; i++)
 {
-if (str[i] != " ") {
-while (str[i] != " ")
+r[i] = (char *) malloc((strlen(str) + 1) * sizeof(char));
+if (r[i] == NULL)
 {
-r[i][j] = str[i];
-i++;
-j++;
+for (j = 0; j <= i; j++)
+free(r[j]);
+free(r);
+return (NULL);
+}
+if (!a[i] == ' ')
+{
+for (x = 0; x < strlen(a + i) ; x++)
+{
+r[x] = a[i + x];
+}
+r[x + 1] = '\0';
+i = i + x;
 }
 }
-}
-
 return (r);
 }
