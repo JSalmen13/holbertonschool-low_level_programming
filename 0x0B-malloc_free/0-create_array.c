@@ -4,11 +4,12 @@
  * create_array - create array with constant char
  * @size: size of array
  * @c: char
+ * Return: 0
  */
 char *create_array(unsigned int size, char c)
 {
 	char *array;
-	int i;
+	unsigned int i;
 
 	if (size == 0)
 		return (NULL);

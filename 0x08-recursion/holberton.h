@@ -14,5 +14,6 @@ int dividable(int n, int div);
 int is_palindrome(char *s);
 int palin(int l, int r, char *p);
 int _strlen(char *str);
+int wildcmp(char *s1, char *s2);
 
 #endif /* HOLBERTON_H */
