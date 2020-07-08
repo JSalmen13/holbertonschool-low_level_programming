@@ -2,19 +2,19 @@
 #include <stdio.h>
 
 /**
-* free_grid - create an array with init
-* @grid: size of the array.
-* @height: size of the array.
-* Return: the array created
+* free_grid - free allocated memory
+* @grid: size
+* @height: height
+* Return: array
 */
 
 void free_grid(int **grid, int height)
 {
-int i = 0;
-while (i < height)
-{
-free(grid[i]);
-i++;
-}
-free(grid);
+	int n = 0;
+	while (n < height)
+	{
+		free(grid[n]);
+		n++;
+	}
+	free(grid);
 }
