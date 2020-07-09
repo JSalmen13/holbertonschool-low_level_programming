@@ -2,9 +2,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * 
- * 
- * 
+ * string_nconcat - string contact
+ * @s1: str
+ * @s2: str
+ * @n: int
+ * Return: success
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
@@ -27,7 +29,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		for (; len < i + k; len++)
 		dest[len] = s2[len - i];
 		dest[len] = '\0';
-		return(dest);
+		return (dest);
 	}
 	else
 	return (NULL);
