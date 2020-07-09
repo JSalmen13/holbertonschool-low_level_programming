@@ -16,11 +16,10 @@ int *array_range(int min, int max)
 	if (num == NULL)
 		return (NULL);
 	j = max;
-	while (i <= (max - min))
-	{
-		num[i] = j;
-		j++;
-		++i;
-	}
+	for (i = 0; i <= (max - min); ++i)
+		{
+			num[i] = j;
+			j++;
+		}
 	return (num);
 }
