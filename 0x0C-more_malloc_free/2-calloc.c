@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
  * _calloc - malloc for array
- * @nmemb: number of elements  
+ * @nmemb: number of elements
  * @size: size of element
  * Return: arr
  */
@@ -15,7 +15,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	arr = malloc(nmemb * size);
 	if (arr == NULL)
 		return (NULL);
-	for (n =0; n < (nmemb * size); n++)
+	for (n = 0; n < (nmemb * size); n++)
 		arr[n] = 0;
 	return (arr);
 }
