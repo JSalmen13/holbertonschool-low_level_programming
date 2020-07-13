@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * free_dog - free 
+ * free_dog - free
  * @d: dog
  * Return: 0.
  */
