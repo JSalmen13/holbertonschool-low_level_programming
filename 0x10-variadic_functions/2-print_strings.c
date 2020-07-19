@@ -7,17 +7,17 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-    va_list k;
+	va_list k;
 	unsigned int i = 0;
-    char *p;
+	char *p;
 
 	va_start(k, n);
 	while (i < n)
 	{
-        p = (va_arg(k, char *));
-        if (p == NULL)
-            printf("(nil)");
-        else
+		p = (va_arg(k, char *));
+		if (p == NULL)
+			printf("(nil)");
+		else
 		printf("%s", p);
 		if (i != n - 1 && separator)
 		printf("%s", separator);
