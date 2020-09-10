@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
-* free_dlistint - print list
+* sum_dlistint - print list
 * @head: doubly list print
 * Return: nulbers of elements
 */

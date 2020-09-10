@@ -1,7 +1,8 @@
 #include "lists.h"
 /**
-* free_dlistint - print list
+* get_dnodeint_at_index - print list
 * @head: doubly list print
+* @index: idx
 * Return: nulbers of elements
 */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
